@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viridiana Sebastián | Psicoterapeuta</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+   <style>
+    :root {
+        --primary-purple: #6b4e71; 
+        --light-purple: #f3eff5;   
+        --accent-gold: #b79492;    
+        --text-dark: #2d232e;     
+        --white: #ffffff;
+    }
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: 'Montserrat', sans-serif;
+        background-color: var(--light-purple);
+        color: var(--text-dark);
+        line-height: 1.6;
+    }
+
+    .main-container {
+        max-width: 500px;
+        margin: 0 auto;
+        background: var(--white);
+        min-height: 100vh;
+        box-shadow: 0 0 20px rgba(0,0,0,0.05);
+    }
+
+    header {
+        padding: 50px 30px;
+        text-align: center;
+        background: linear-gradient(180deg, #ebe4ed 0%, #ffffff 100%);
+    }
+
+    .profile-card {
+        background: var(--white);
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(107, 78, 113, 0.1);
+        border: 8px solid var(--white);
+        animation: floating 5s ease-in-out infinite;
+    }
+
+    h1 {
+        font-family: 'DM Serif Display', serif;
+        font-size: 2.2rem;
+        color: var(--primary-purple);
+        margin-top: 20px;
+    }
+
+    .specialty {
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 0.9rem;
+        color: var(--accent-gold);
+    }
+
+    .cedula {
+        font-size: 0.7rem;
+        opacity: 0.6;
+        margin-top: 5px;
+    }
+
+    /* --- SECCIONES DE CONTENIDO --- */
+    section {
+        padding: 30px;
+    }
+
+    h2 {
+        font-family: 'DM Serif Display', serif;
+        font-size: 1.5rem;
+        border-bottom: 2px solid var(--light-purple);
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        color: var(--primary-purple);
+    }
+
+    .info-list {
+        list-style: none;
+    }
+
+    .info-item {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 15px;
+        align-items: flex-start;
+    }
+
+    .info-item i {
+        color: var(--accent-gold);
+        margin-top: 5px;
+    }
+
+    .badge-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .badge {
+        background: var(--light-purple);
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 0.8rem;
+        text-align: center;
+        font-weight: 600;
+        color: var(--primary-purple);
+    }
+
+    /* --- EXPERIENCIA INSTITUCIONAL --- */
+    .experience-box {
+        background: var(--primary-purple);
+        color: white;
+        padding: 25px;
+        border-radius: 20px;
+        margin: 20px 0;
+    }
+
+    .experience-box h2 {
+        color: white;
+        border-color: rgba(255,255,255,0.2);
+    }
+
+    .inst-list {
+        font-size: 0.85rem;
+        opacity: 0.9;
+    }
+
+    /* --- CONTACTO --- */
+    .cta-box {
+        text-align: center;
+        padding: 40px 30px;
+    }
+
+    .btn-whatsapp {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        background: var(--primary-purple);
+        color: white;
+        text-decoration: none;
+        padding: 18px;
+        border-radius: 50px;
+        font-weight: bold;
+        box-shadow: 0 10px 20px rgba(107, 78, 113, 0.3);
+        transition: transform 0.2s;
+    }
+
+    .btn-whatsapp:hover {
+        transform: scale(1.02);
+    }
+
+    .address {
+        margin-top: 20px;
+        font-size: 0.85rem;
+        opacity: 0.7;
+    }
+
+    /* --- ANIMACIONES --- */
+    @keyframes floating {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0px); }
+    }
+
+    footer {
+        text-align: center;
+        padding: 30px;
+        font-size: 0.7rem;
+        opacity: 0.5;
+    }
+</style>
+</head>
+<body>
+
+    <div class="main-container">
+        <!-- Encabezado Perfil -->
+        <header>
+            <div class="profile-card">
+                <span class="specialty">Psicoterapeuta</span>
+                <h1>Viridiana Sebastián</h1>
+                <p class="cedula">Cédula Profesional: 10812977</p>
+            </div>
+        </header>
+
+        <!-- Formación -->
+        <section>
+            <h2>Formación Académica</h2>
+            <ul class="info-list">
+                <li class="info-item">
+                    <i class="fas fa-university"></i>
+                    <span>Lic. en Psicología por la <strong>UNAM</strong></span>
+                </li>
+                <li class="info-item">
+                    <i class="fas fa-certificate"></i>
+                    <span>Especialidad en Psicoterapia Clínica</span>
+                </li>
+            </ul>
+            
+            <div class="badge-grid">
+                <div class="badge">Cognitivo Conductual</div>
+                <div class="badge">Familiar y Pareja</div>
+                <div class="badge">Psicoterapia de Trauma</div>
+                <div class="badge">Certificación Cruz Roja</div>
+            </div>
+        </section>
+
+        <!-- Trayectoria -->
+        <section class="experience-box">
+            <h2>Experiencia Institucional</h2>
+            <div class="inst-list">
+                <p>Ha colaborado en instituciones de alto prestigio:</p>
+                <br>
+                <ul class="info-list">
+                    <li>• Instituto Nacional de Rehabilitación</li>
+                    <li>• IMSS</li>
+                    <li>• Hospital General de México "Dr. Eduardo Liceaga"</li>
+                    <li>• Fundación Alzheimer</li>
+                    <li>• SAPTEL</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Llamada a la acción -->
+        <div class="cta-box">
+            <a href="https://wa.me/5530185399" class="btn-whatsapp">
+                <i class="fab fa-whatsapp"></i>
+                Agendar Consulta
+            </a>
+            <p class="address">
+                <i class="fas fa-map-marker-alt"></i><br>
+                Insurgentes Sur 682, Col. Del Valle
+            </p>
+        </div>
+
+        <footer>
+            <p>Diseño exclusivo Hand-Crafted en Código Puro por [Tu Nombre/Empresa]</p>
+        </footer>
+    </div>
+
+</body>
+</html>
